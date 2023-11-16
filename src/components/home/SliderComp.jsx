@@ -1,0 +1,38 @@
+import React from 'react'
+import Slider from 'react-slick';
+
+const SliderComp = () => {
+    const settings = {
+        infinite: true,
+        speed: 500,
+        autoplay:true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    };
+    return (
+        <div>
+            <Slider {...settings}>
+                <div className="!flex items-center bg-gray-100 p-6">
+                    <div className=''>
+                        <div className='text-5xl font-bold'>En Kaliteli Ayakkabılar Burada</div>
+                        <div className='text-lg my-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente accusamus dolore ipsum debitis, consectetur quam sed maiores ut! Aperiam quam aut voluptatum pariatur odio, dolorum sunt optio. Soluta, dolorem architecto.</div>
+                        <div className='border rounded-full cursor-pointer text-2xl w-[200px] h-16 flex items-center justify-center bg-gray-200'>İncele</div>
+                    </div>
+                    <img src="data:image/jpeg;base64,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" alt="" />
+                </div>
+                <div className="!flex items-center bg-gray-100 p-6">
+                <div className=''>
+                        <div className='text-5xl font-bold'>En Kaliteli Ayakkabılar Burada</div>
+                        <div className='text-lg my-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente accusamus dolore ipsum debitis, consectetur quam sed maiores ut! Aperiam quam aut voluptatum pariatur odio, dolorum sunt optio. Soluta, dolorem architecto.</div>
+                        <div className='border rounded-full cursor-pointer text-2xl w-[200px] h-16 flex items-center justify-center bg-gray-200'>İncele</div>
+                    </div>
+                    <h3>
+                        <img src="data:image/jpeg;base64,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" alt="" />
+                    </h3>
+                </div>
+            </Slider>
+        </div>
+    )
+}
+
+export default SliderComp
